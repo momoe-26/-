@@ -28,43 +28,93 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e3-W0-xnO">
-                                <rect key="frame" x="152" y="799" width="110" height="31"/>
-                                <color key="backgroundColor" red="0.0" green="0.67426637403008083" blue="0.86098994040975763" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="プロフィール"/>
-                                <connections>
-                                    <action selector="tapButton1" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z22-Of-ofW"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="えーにょ" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFf-oX-Hho">
                                 <rect key="frame" x="16" y="444" width="382" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="SAs-V7-JLy">
+                                <rect key="frame" x="16" y="752" width="382" height="78"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="r8b-os-vRf">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e3-W0-xnO">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="31"/>
+                                                <color key="backgroundColor" red="0.0" green="0.67426637403008083" blue="0.86098994040975763" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="名前"/>
+                                                <connections>
+                                                    <action selector="tapButtonName" destination="BYZ-38-t0r" eventType="touchUpInside" id="pSa-XW-d02"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="664-fT-YhX">
+                                                <rect key="frame" x="199" y="0.0" width="183" height="31"/>
+                                                <color key="backgroundColor" red="0.0" green="0.674266374" blue="0.86098994039999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="スポーツ"/>
+                                                <connections>
+                                                    <action selector="tapButtonSport" destination="BYZ-38-t0r" eventType="touchUpInside" id="H17-95-NN1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Fjy-IT-RYH">
+                                        <rect key="frame" x="0.0" y="47" width="382" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOE-mF-xHd">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="31"/>
+                                                <color key="backgroundColor" red="0.0" green="0.674266374" blue="0.86098994039999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="好きな食べ物"/>
+                                                <connections>
+                                                    <action selector="tapButtonFood" destination="BYZ-38-t0r" eventType="touchUpInside" id="eX9-bs-dMY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hW-6W-T8K">
+                                                <rect key="frame" x="199" y="0.0" width="183" height="31"/>
+                                                <color key="backgroundColor" red="0.0" green="0.674266374" blue="0.86098994039999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="趣味"/>
+                                                <connections>
+                                                    <action selector="tapButtonHobby" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qxg-9v-ksc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CFf-oX-Hho" secondAttribute="trailing" constant="16" id="1zA-bP-SV2"/>
-                            <constraint firstItem="6e3-W0-xnO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4gD-RB-smq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SAs-V7-JLy" secondAttribute="bottom" constant="32" id="2i3-Xx-IMp"/>
                             <constraint firstItem="nvm-Mh-k6S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4ha-ow-PY1"/>
+                            <constraint firstItem="SAs-V7-JLy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7rF-ge-uCP"/>
                             <constraint firstItem="CFf-oX-Hho" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9nZ-6U-SZe"/>
                             <constraint firstItem="nvm-Mh-k6S" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FH3-x1-SzA"/>
                             <constraint firstItem="CFf-oX-Hho" firstAttribute="top" secondItem="1dV-J1-njb" secondAttribute="bottom" constant="16" id="XZy-95-4AL"/>
                             <constraint firstItem="nvm-Mh-k6S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dh4-4F-5vD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6e3-W0-xnO" secondAttribute="bottom" constant="32" id="eao-gA-OiY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1dV-J1-njb" secondAttribute="trailing" constant="16" id="j4m-da-3rc"/>
                             <constraint firstItem="1dV-J1-njb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="meB-Ox-fio"/>
                             <constraint firstItem="1dV-J1-njb" firstAttribute="top" secondItem="nvm-Mh-k6S" secondAttribute="bottom" constant="16" id="teA-6x-jsJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SAs-V7-JLy" secondAttribute="trailing" constant="16" id="tqL-0A-3Qk"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="profileCommentLabel" destination="1dV-J1-njb" id="Px8-8N-qxi"/>
+                        <outlet property="profileCommentLabel" destination="CFf-oX-Hho" id="nb8-cq-R7c"/>
                         <outlet property="profileImageView" destination="nvm-Mh-k6S" id="yXH-Ds-uVY"/>
+                        <outlet property="profileLabel" destination="1dV-J1-njb" id="nbl-5c-4Ur"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
